@@ -6,4 +6,8 @@ export default class MemberApi {
   static getMembers() {
     return axios.get(URL);
   }
+
+  static addMember(name) {
+    return axios.post(URL, { name });
+  }
 }

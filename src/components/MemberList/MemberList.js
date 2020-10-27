@@ -22,6 +22,16 @@ export default class MemberList extends React.PureComponent {
     }
   }
 
+  addMember = async (name) => {
+    try {
+      const response = await MemberApi.addMember(name);
+      const members = [...response.data];
+      this.setState({ members });
+    } catch (e) {
+      // Dismiss for now
+    }
+  };
+
   render() {
     return (
       <section>
@@ -30,7 +40,7 @@ export default class MemberList extends React.PureComponent {
           {this.state.members.map((member) => (
             <Member member={member} key={member.id} />
           ))}
-          <NewMemberInput />
+          <NewMemberInput addMember={this.addMember} />
         </section>
       </section>
     );
