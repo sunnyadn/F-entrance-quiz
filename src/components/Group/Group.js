@@ -1,5 +1,6 @@
 import React from 'react';
 import Member from '../Member/Member';
+import './Group.scss';
 
 export default function Group(props) {
   return (
