@@ -1,6 +1,6 @@
 import React from 'react';
 import './MemberList.scss';
-import axios from 'axios';
+import MemberApi from '../../api/MemberApi';
 
 export default class MemberList extends React.PureComponent {
   constructor() {
@@ -12,7 +12,7 @@ export default class MemberList extends React.PureComponent {
 
   async componentDidMount() {
     try {
-      const response = await axios.get('http://localhost:8080/members');
+      const response = await MemberApi.getMembers();
       const members = [...response.data];
       this.setState({ members });
     } catch (e) {
