@@ -2,6 +2,7 @@ import React from 'react';
 import './MemberList.scss';
 import MemberApi from '../../api/MemberApi';
 import Member from '../Member/Member';
+import NewMemberInput from '../NewMemberInput/NewMemberInput';
 
 export default class MemberList extends React.PureComponent {
   constructor() {
@@ -29,9 +30,7 @@ export default class MemberList extends React.PureComponent {
           {this.state.members.map((member) => (
             <Member member={member} key={member.id} />
           ))}
-          <button className="add-member-button" type="button">
-            + 添加学员
-          </button>
+          <NewMemberInput />
         </section>
       </section>
     );
