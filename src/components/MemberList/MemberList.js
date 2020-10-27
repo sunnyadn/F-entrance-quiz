@@ -1,4 +1,5 @@
 import React from 'react';
+import './MemberList.scss';
 
 export default function MemberList() {
   const members = [
@@ -22,7 +23,7 @@ export default function MemberList() {
   return (
     <section>
       <h1>学员列表</h1>
-      <section>
+      <section className="members">
         {members.map((member) => (
           <div>{`${member.id}. ${member.name}`}</div>
         ))}
