@@ -3,12 +3,14 @@ import Member from '../Member/Member';
 import './Group.scss';
 
 export default function Group(props) {
+  const { group, index } = props;
+
   return (
     <div className="group">
-      <h2 className="group-title">{props.index + 1} 组</h2>
+      <h2 className="group-title">{index + 1} 组</h2>
       <div className="group-members">
-        {props.group.map((member) => (
-          <Member member={member} />
+        {group.map((member) => (
+          <Member member={member} key={member.id} />
         ))}
       </div>
     </div>

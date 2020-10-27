@@ -27,7 +27,7 @@ export default class MemberList extends React.PureComponent {
         <h1>学员列表</h1>
         <section className="members">
           {this.state.members.map((member) => (
-            <Member member={member} />
+            <Member member={member} key={member.id} />
           ))}
           <button className="add-member-button" type="button">
             + 添加学员

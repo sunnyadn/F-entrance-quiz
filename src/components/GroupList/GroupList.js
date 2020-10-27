@@ -48,7 +48,7 @@ export default class GroupList extends React.PureComponent {
           </button>
         </div>
         {this.state.groups.map((group, index) => (
-          <Group group={group} index={index} />
+          <Group group={group} index={index} key={group[0].id} />
         ))}
       </section>
     );
