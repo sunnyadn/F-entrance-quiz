@@ -16,3 +16,9 @@
   font-weight: normal;
   margin: 0;
 }
+
+.group-members {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}

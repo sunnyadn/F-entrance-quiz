@@ -6,7 +6,7 @@ export default function Group(props) {
   return (
     <div className="group">
       <h2 className="group-title">{props.index + 1} 组</h2>
-      <div>
+      <div className="group-members">
         {props.group.map((member) => (
           <Member member={member} />
         ))}
