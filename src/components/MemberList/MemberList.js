@@ -28,6 +28,9 @@ export default class MemberList extends React.PureComponent {
           {this.state.members.map((member) => (
             <div className="member" key={member.id}>{`${member.id}. ${member.name}`}</div>
           ))}
+          <button className="add-member-button" type="button">
+            + 添加学员
+          </button>
         </section>
       </section>
     );

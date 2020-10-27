@@ -14,3 +14,10 @@
   text-align: center;
   line-height: $member-height;
 }
+
+.add-member-button {
+  @extend .member;
+  border: 1px solid $gray;
+  color: $dark-gray;
+  background: transparent;
+}
