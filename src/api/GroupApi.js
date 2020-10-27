@@ -6,4 +6,8 @@ export default class GroupApi {
   static getGroups() {
     return axios.get(URL);
   }
+
+  static refreshGroups() {
+    return axios.post(`${URL}/refresh`);
+  }
 }

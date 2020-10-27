@@ -9,7 +9,7 @@ export default function Group(props) {
     <div className="group">
       <h2 className="group-title">{index + 1} 组</h2>
       <div className="group-members">
-        {group.map((member) => (
+        {group.members.map((member) => (
           <Member member={member} key={member.id} />
         ))}
       </div>
