@@ -1,9 +1,14 @@
 @import '../../style/variables';
 
+.title {
+  display: inline;
+}
+
 .group-button {
   background: $primary-color;
   height: 40px;
   width: 120px;
   border: none;
   color: white;
+  float: right;
 }

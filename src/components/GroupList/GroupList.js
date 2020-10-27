@@ -5,8 +5,8 @@ export default class GroupList extends React.PureComponent {
   render() {
     return (
       <section>
-        <div className="title">
-          <h1>分组列表</h1>
+        <div>
+          <h1 className="title">分组列表</h1>
           <button className="group-button" type="button">
             分组学员
           </button>
