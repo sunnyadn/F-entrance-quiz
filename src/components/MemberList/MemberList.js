@@ -25,7 +25,7 @@ export default function MemberList() {
       <h1>学员列表</h1>
       <section className="members">
         {members.map((member) => (
-          <div>{`${member.id}. ${member.name}`}</div>
+          <div className="member">{`${member.id}. ${member.name}`}</div>
         ))}
       </section>
     </section>

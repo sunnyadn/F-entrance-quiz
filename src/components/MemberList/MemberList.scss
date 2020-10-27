@@ -1,4 +1,16 @@
+@import '../../style/variables';
+
 .members {
   display: flex;
   flex-wrap: wrap;
+}
+
+.member {
+  $member-height: 40px;
+  width: 80px;
+  height: $member-height;
+  margin: 10px;
+  background: $bg-gray;
+  text-align: center;
+  line-height: $member-height;
 }
