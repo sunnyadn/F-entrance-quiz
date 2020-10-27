@@ -4,11 +4,18 @@
   display: inline;
 }
 
+.group-head {
+  margin-bottom: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .group-button {
   background: $primary-color;
   height: 40px;
   width: 120px;
   border: none;
   color: white;
-  float: right;
 }

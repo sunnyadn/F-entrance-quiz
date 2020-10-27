@@ -41,15 +41,15 @@ export default class GroupList extends React.PureComponent {
   render() {
     return (
       <section>
-        <div>
+        <div className="group-head">
           <h1 className="title">分组列表</h1>
           <button className="group-button" type="button">
             分组学员
           </button>
-          {this.state.groups.map((group, index) => (
-            <Group group={group} index={index} />
-          ))}
         </div>
+        {this.state.groups.map((group, index) => (
+          <Group group={group} index={index} />
+        ))}
       </section>
     );
   }
